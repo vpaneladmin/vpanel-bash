@@ -104,7 +104,7 @@ install_auto_bot() {
 
     print_separator
     echo -e "${CYAN}Step 5: Downloading and setting up bot files...${RESET}"
-    local repo_url="https://5.75.203.177/vpanel-bot-main.zip"
+    local repo_url="https://vpanel.pluslimoo.de/vpanel-bot-main.zip"
     local temp_zip_file="/tmp/vpanel-bot-main.zip"
     mkdir -p "$install_path"
     wget -q -O "$temp_zip_file" "$repo_url"
@@ -226,7 +226,7 @@ install_manual_bot() {
         return 1
     fi
 
-    local repo_url="https://5.75.203.177/vpanel-bot-main.zip"
+    local repo_url="https://vpanel.pluslimoo.de/vpanel-bot-main.zip"
     local temp_zip_file="vpanel-bot-main.zip"
 
     read -p "$(echo -e ${YELLOW}"\nPlease enter the full installation path (e.g., /var/www/html/bot): "${RESET})" install_path
